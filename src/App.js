@@ -1,10 +1,11 @@
+import InterlocutorsWindow from './components/InterlocutorsWindow';
 
 const App = () => {
   return (
     <>
-      <h1>BOO!</h1>
+      <InterlocutorsWindow />
     </>
   );
-}
+};
 
 export default App;
