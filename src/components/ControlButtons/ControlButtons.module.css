@@ -1,0 +1,26 @@
+.buttonsContainer {
+  display: flex;
+  margin-left: 100px;
+  align-items: center;
+}
+.button {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(51, 46, 46);
+  color: #fff;
+  padding: 7px;
+}
+.callEndButton {
+  width: 50px;
+  height: 35px;
+  border-radius: 42%;
+  border: none;
+  background-color: red;
+  color: #fff;
+}
+.callEndButton:hover {
+  background-color: rgb(224, 75, 75);
+}
