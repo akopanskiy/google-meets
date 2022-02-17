@@ -1,11 +1,11 @@
 import InterlocutorsWindow from './components/InterlocutorsWindow';
-import FunctionButtons from './components/FunctioinButtons';
+import FunctionPanel from './components/FunctionPanel';
 
 const App = () => {
   return (
     <>
       <InterlocutorsWindow />
-      <FunctionButtons />
+      <FunctionPanel />
     </>
   );
 };

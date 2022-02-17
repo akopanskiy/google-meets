@@ -1,0 +1,9 @@
+.functionButtonsContainer {
+  display: flex;
+  margin-left: 200px;
+}
+.button {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}

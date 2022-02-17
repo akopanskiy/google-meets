@@ -1,13 +1,13 @@
 import { AiFillAudio } from 'react-icons/ai';
 import { FiVideo } from 'react-icons/fi';
-import { MdOutlineIosShare, MdOutlineMoreVert } from 'react-icons/md';
+import { MdOpenInBrowser, MdOutlineMoreVert } from 'react-icons/md';
 import { ImPhoneHangUp } from 'react-icons/im';
 import styles from './ControlButtons.module.css';
 import { IconContext } from 'react-icons';
 
 const ControlButtons = () => {
   return (
-    <div className={styles.buttonsContainer}>
+    <div className={styles.controlButtonsContainer}>
       <IconContext.Provider value={{ size: '20px' }}>
         <button type="button" className={styles.button}>
           <AiFillAudio />
@@ -16,7 +16,7 @@ const ControlButtons = () => {
           <FiVideo />
         </button>
         <button type="button" className={styles.button}>
-          <MdOutlineIosShare />
+          <MdOpenInBrowser />
         </button>
         <button type="button" className={styles.button}>
           <MdOutlineMoreVert />
