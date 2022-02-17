@@ -10,7 +10,7 @@ html {
   outline: none;
 }
 body {
-  background-color: black;
+  background-color: gray;
 }
 ul {
   padding: 0;
@@ -19,15 +19,20 @@ ul {
 }
 .headWindow {
   width: 85vw;
-  height: 85vh;
+  height: 87vh;
   margin-right: auto;
   margin-left: auto;
   margin-top: 15px;
-  margin-bottom: 40px;
-  border-radius: 5px;
-  background-color: #fff;
+  border-radius: 10px;
 }
 .img {
+  position: relative;
   width: 100%;
   height: 100%;
+}
+.nameInterlocutor {
+  position: absolute;
+  bottom: 110px;
+  left: 130px;
+  color: #fff;
 }
