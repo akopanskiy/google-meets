@@ -1,3 +1,9 @@
+.itemContainerFirst {
+  margin: 8px 15px;
+}
+.itemContainerSecond {
+  margin: 18px 15px;
+}
 .toolbarItem {
   display: flex;
   align-items: center;
@@ -18,4 +24,7 @@ span {
   margin-left: 19px;
   font-size: 12px;
   color: #a9a9a9;
+}
+.border {
+  border-bottom: 1px solid gray;
 }
