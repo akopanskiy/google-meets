@@ -1,10 +1,12 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import styles from './InterlocutorsWindow.module.css';
 import defaultImg from '../../images/headImg.jpg';
 import fetchImages from '../../services/imgAPI';
+import { VisibleDropdownContext } from '../../context/visibleDropdown';
 
 const InterlocutorsWindow = () => {
   const [image, setImage] = useState('');
+  const { visible } = useContext(VisibleDropdownContext);
 
   const getImage = () => {
     fetchImages().then(res =>
@@ -13,7 +15,13 @@ const InterlocutorsWindow = () => {
   };
 
   return (
-    <div className={styles.headWindow}>
+    <div
+      className={styles.headWindow}
+      style={{
+        width: visible ? '74vw' : '87vw',
+        marginLeft: visible ? '15px' : 'auto',
+      }}
+    >
       <img
         src={image === '' ? defaultImg : image.largeImageURL}
         alt="some mems"
@@ -21,7 +29,10 @@ const InterlocutorsWindow = () => {
         className={styles.img}
         onClick={getImage}
       />
-      <span className={styles.nameInterlocutor}>
+      <span
+        className={styles.nameInterlocutor}
+        style={{ left: visible ? '18px' : '105px' }}
+      >
         Someone on the other side of the screen
       </span>
     </div>

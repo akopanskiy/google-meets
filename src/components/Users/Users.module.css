@@ -4,10 +4,7 @@
   font-weight: 600;
   margin: 15px 0 15px 8px;
 }
-.activeUsers {
-}
-.itemUsers {
-}
+
 .user {
   display: flex;
   align-items: center;

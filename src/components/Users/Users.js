@@ -10,8 +10,8 @@ const Users = () => {
   return (
     <>
       <h6 className={styles.headerUsers}>Триває виклик</h6>
-      <div className={styles.activeUsers}>
-        <ul className={styles.itemUsers}>
+      <div>
+        <ul>
           <li className={styles.user}>
             <div className={styles.userIcon}>
               <span className={styles.userIconContent}>A</span>
