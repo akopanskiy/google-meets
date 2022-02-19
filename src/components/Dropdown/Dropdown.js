@@ -43,17 +43,17 @@ const DropDown = () => {
             </div>
             <div className={styles.navText}>
               <div className={styles.nameButton}>
-                <h5>Мікрофони всіх</h5>
-                <h5>учасників</h5>
-                <h5>вимкнено</h5>
+                <h5 className={styles.h5}>Мікрофони всіх</h5>
+                <h5 className={styles.h5}>учасників</h5>
+                <h5 className={styles.h5}>вимкнено</h5>
               </div>
               <div className={styles.nameButton}>
-                <h5>Додати</h5>
-                <h5>людей</h5>
+                <h5 className={styles.h5}>Додати</h5>
+                <h5 className={styles.h5}>людей</h5>
               </div>
               <div className={styles.nameButton}>
-                <h5>Керування</h5>
-                <h5>зустріччю</h5>
+                <h5 className={styles.h5}>Керування</h5>
+                <h5 className={styles.h5}> зустріччю</h5>
               </div>
             </div>
             <Search />
