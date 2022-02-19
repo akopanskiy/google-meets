@@ -1,0 +1,71 @@
+.headerUsers {
+  color: gray;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 15px 0 15px 8px;
+}
+.activeUsers {
+}
+.itemUsers {
+}
+.user {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.userIcon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: rgb(220, 43, 226);
+}
+.userIconContent {
+  display: inline-block;
+  color: #fff;
+  font-size: 25px;
+
+  margin-left: 7px;
+}
+.nameUserContainer {
+  display: block;
+  margin-left: 10px;
+}
+.username {
+  width: 157px;
+  font-weight: 700;
+  margin: 0;
+}
+.eventOrganizer {
+  color: gray;
+  font-weight: 700;
+  margin: 0;
+}
+.soundSignUser {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: blue;
+  margin-left: 30px;
+  padding: 0px;
+}
+.userSigns {
+  width: 25px;
+  height: 25px;
+  margin-left: 25px;
+  padding: 1px;
+}
+.userSecondIcon {
+  width: 35px;
+  height: 35px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  background-color: #8b4513;
+  padding: 1px;
+}
+.userSecondSigns {
+  width: 25px;
+  height: 25px;
+  margin-left: 27px;
+  padding: 1px;
+}

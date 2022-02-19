@@ -1,4 +1,5 @@
 import Search from '../Search';
+import Users from '../Users';
 import { useContext } from 'react';
 import { IconContext } from 'react-icons';
 import { VisibleDropdownContext } from '../../context/visibleDropdown';
@@ -43,20 +44,21 @@ const DropDown = () => {
             </div>
             <div className={styles.navText}>
               <div className={styles.nameButton}>
-                <h5 className={styles.h5}>Мікрофони всіх</h5>
-                <h5 className={styles.h5}>учасників</h5>
-                <h5 className={styles.h5}>вимкнено</h5>
+                <h5 className={styles.nameButtonText}>Мікрофони всіх</h5>
+                <h5 className={styles.nameButtonText}>учасників</h5>
+                <h5 className={styles.nameButtonText}>вимкнено</h5>
               </div>
               <div className={styles.nameButton}>
-                <h5 className={styles.h5}>Додати</h5>
-                <h5 className={styles.h5}>людей</h5>
+                <h5 className={styles.nameButtonText}>Додати</h5>
+                <h5 className={styles.nameButtonText}>людей</h5>
               </div>
               <div className={styles.nameButton}>
-                <h5 className={styles.h5}>Керування</h5>
-                <h5 className={styles.h5}> зустріччю</h5>
+                <h5 className={styles.nameButtonText}>Керування</h5>
+                <h5 className={styles.nameButtonText}> зустріччю</h5>
               </div>
             </div>
             <Search />
+            <Users />
           </IconContext.Provider>
         </div>
       )}
