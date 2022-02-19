@@ -32,7 +32,8 @@ ul {
 }
 .nameInterlocutor {
   position: absolute;
-  bottom: 110px;
+  bottom: 102px;
   left: 130px;
   color: #fff;
+  font-size: 15px;
 }

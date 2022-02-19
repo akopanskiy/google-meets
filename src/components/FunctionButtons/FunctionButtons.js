@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+import { VisibleDropdownContext } from '../../context/visibleDropdown';
+
 import { BiInfoCircle } from 'react-icons/bi';
 import {
   MdOutlinePeopleOutline,
@@ -9,13 +12,19 @@ import { IconContext } from 'react-icons';
 import styles from './FunctionButtons.module.css';
 
 const FunctionButtons = () => {
+  const { toggleDropdown } = useContext(VisibleDropdownContext);
+
   return (
     <div className={styles.functionButtonsContainer}>
       <IconContext.Provider value={{ size: '25px' }}>
         <button type="button" className={styles.button}>
           <BiInfoCircle />
         </button>
-        <button type="button" className={styles.button}>
+        <button
+          type="button"
+          className={styles.button}
+          onClick={toggleDropdown}
+        >
           <MdOutlinePeopleOutline />
         </button>
         <button type="button" className={styles.button}>
