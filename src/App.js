@@ -8,15 +8,15 @@ import { VisibleDropdownContext } from './context/visibleDropdown';
 const App = () => {
   const [visible, setVisible] = useState(false);
   const [disabled, setDisabled] = useState(false);
-  const [activeHover, setActiveHover] = useState(false);
+  const [activeHoverExit, setActiveHoverExit] = useState(false);
 
   const toggleDropdown = () => {
     setVisible(prev => !prev);
     setDisabled(prev => !prev);
   };
 
-  const hoverDropdown = () => {
-    setActiveHover(prev => !prev);
+  const hoverDropdownBtnExit = () => {
+    setActiveHoverExit(prev => !prev);
   };
 
   return (
@@ -25,9 +25,9 @@ const App = () => {
         value={{
           visible,
           disabled,
-          activeHover,
           toggleDropdown,
-          hoverDropdown,
+          activeHoverExit,
+          hoverDropdownBtnExit,
         }}
       >
         <InterlocutorsWindow />

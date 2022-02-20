@@ -13,9 +13,8 @@ import styles from './Dropdown.module.css';
 import React from 'react';
 
 const DropDown = () => {
-  const { visible, toggleDropdown, activeHover, hoverDropdown } = useContext(
-    VisibleDropdownContext,
-  );
+  const { visible, toggleDropdown, activeHoverExit, hoverDropdownBtnExit } =
+    useContext(VisibleDropdownContext);
 
   return (
     <>
@@ -28,14 +27,14 @@ const DropDown = () => {
                 type="button"
                 onClick={toggleDropdown}
                 className={styles.closeDropdown}
-                onMouseOut={() => hoverDropdown()}
-                onMouseOver={() => hoverDropdown()}
+                onMouseOut={() => hoverDropdownBtnExit()}
+                onMouseOver={() => hoverDropdownBtnExit()}
               >
                 <IoMdClose />
               </button>
               <div
                 className={styles.hoverExitDropdown}
-                style={{ display: activeHover ? 'block' : 'none' }}
+                style={{ display: activeHoverExit ? 'block' : 'none' }}
               >
                 <h6 className={styles.hoverExitDropdownText}>Вихід</h6>
               </div>

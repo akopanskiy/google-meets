@@ -3,6 +3,7 @@
   align-items: center;
 }
 .button {
+  position: relative;
   width: 35px;
   height: 35px;
   margin-right: 10px;
@@ -14,6 +15,61 @@
 }
 .button:hover {
   background-color: #464141;
+}
+.hoverBtnDropdownFirst {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  top: 665px;
+  left: 560px;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
+}
+.hoverBtnDropdownSecond {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  top: 665px;
+  left: 600px;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
+}
+.hoverBtnDropdownThird {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  top: 665px;
+  left: 645px;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
+}
+.hoverBtnDropdownFourth {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  top: 665px;
+  left: 710px;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+.hoverBtnDropdownFifth {
+  position: absolute;
+  width: 130px;
+  height: 20px;
+  top: 665px;
+  left: 750px;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+}
+.hoverBtnDropdownText {
+  margin: 3px 0 0 7px;
 }
 .callEndButton {
   width: 50px;
