@@ -52,6 +52,11 @@
   margin-left: 25px;
   padding: 1px;
 }
+.userSigns:hover,
+.userSecondSigns:hover {
+  border-radius: 50%;
+  background-color: #a9a9a9;
+}
 .userSecondIcon {
   width: 35px;
   height: 35px;
