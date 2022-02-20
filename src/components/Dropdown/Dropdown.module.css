@@ -24,9 +24,30 @@ h3 {
 .closeDropdown {
   width: 20px;
   height: 20px;
+  margin-right: 3px;
   padding: 0px;
   background-color: white;
   border: none;
+}
+.closeDropdown:hover {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(204, 195, 195);
+}
+.hoverExitDropdown {
+  position: absolute;
+  width: 45px;
+  height: 20px;
+  top: 45px;
+  right: 5px;
+  background-color: black;
+  border-radius: 3px;
+  font-size: 18px;
+  color: #fff;
+}
+.hoverExitDropdownText {
+  margin: 3px 0 0 7px;
 }
 .navButtonDropdown {
   display: flex;

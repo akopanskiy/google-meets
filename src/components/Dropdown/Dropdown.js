@@ -1,6 +1,6 @@
 import Search from '../Search';
 import Users from '../Users';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { IconContext } from 'react-icons';
 import { VisibleDropdownContext } from '../../context/visibleDropdown';
 
@@ -10,10 +10,17 @@ import { BsPersonPlus } from 'react-icons/bs';
 import { MdOutlineToggleOn } from 'react-icons/md';
 import styles from './Dropdown.module.css';
 
+import React from 'react';
+
 const DropDown = () => {
   const { visible } = useContext(VisibleDropdownContext);
   const { toggleDropdown } = useContext(VisibleDropdownContext);
+  const [exitHover, setExitHover] = useState(false);
 
+  const hoverExit = () => {
+    setExitHover(prev => !prev);
+  };
+  console.log(exitHover);
   return (
     <>
       {visible && (
@@ -25,10 +32,19 @@ const DropDown = () => {
                 type="button"
                 onClick={toggleDropdown}
                 className={styles.closeDropdown}
+                onMouseOut={() => hoverExit()}
+                onMouseOver={() => hoverExit()}
               >
                 <IoMdClose />
               </button>
+              <div
+                className={styles.hoverExitDropdown}
+                style={{ display: exitHover ? 'block' : 'none' }}
+              >
+                <h6 className={styles.hoverExitDropdownText}>Вихід</h6>
+              </div>
             </div>
+
             <div className={styles.navButtonDropdown}>
               <button type="button" className={styles.navButton}>
                 <BiMicrophoneOff />
