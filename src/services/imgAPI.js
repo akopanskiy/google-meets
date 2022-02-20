@@ -11,7 +11,7 @@ axios.defaults.params = {
 };
 
 const fetchImages = () => {
-  return axios.get(`?key=${KEY}&q=memes`);
+  return axios.get(`?key=${KEY}&q=cats`);
 };
 
 export default fetchImages;

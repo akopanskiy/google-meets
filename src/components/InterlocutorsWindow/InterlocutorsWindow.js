@@ -18,7 +18,7 @@ const InterlocutorsWindow = () => {
     <div
       className={styles.headWindow}
       style={{
-        width: visible ? '74vw' : '87vw',
+        width: visible ? '73.5vw' : '87vw',
         marginLeft: visible ? '15px' : 'auto',
       }}
     >
