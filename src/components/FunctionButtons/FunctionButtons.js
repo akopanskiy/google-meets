@@ -12,7 +12,7 @@ import { IconContext } from 'react-icons';
 import styles from './FunctionButtons.module.css';
 
 const FunctionButtons = () => {
-  const { toggleDropdown } = useContext(VisibleDropdownContext);
+  const { disabled, toggleDropdown } = useContext(VisibleDropdownContext);
 
   return (
     <div className={styles.functionButtonsContainer}>
@@ -23,6 +23,7 @@ const FunctionButtons = () => {
         <button
           type="button"
           className={styles.button}
+          style={{ color: disabled ? '#00BFFF' : 'white' }}
           onClick={toggleDropdown}
         >
           <MdOutlinePeopleOutline />

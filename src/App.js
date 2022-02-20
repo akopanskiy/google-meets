@@ -7,13 +7,17 @@ import { VisibleDropdownContext } from './context/visibleDropdown';
 
 const App = () => {
   const [visible, setVisible] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const toggleDropdown = () => {
     setVisible(prev => !prev);
+    setDisabled(prev => !prev);
   };
   return (
     <>
-      <VisibleDropdownContext.Provider value={{ visible, toggleDropdown }}>
+      <VisibleDropdownContext.Provider
+        value={{ visible, disabled, toggleDropdown }}
+      >
         <InterlocutorsWindow />
         <FunctionPanel onClick={toggleDropdown} visible={visible} />
         <DropDown onClick={toggleDropdown} visible={visible} />
