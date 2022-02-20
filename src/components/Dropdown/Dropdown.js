@@ -1,6 +1,6 @@
 import Search from '../Search';
 import Users from '../Users';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { IconContext } from 'react-icons';
 import { VisibleDropdownContext } from '../../context/visibleDropdown';
 
@@ -13,14 +13,10 @@ import styles from './Dropdown.module.css';
 import React from 'react';
 
 const DropDown = () => {
-  const { visible } = useContext(VisibleDropdownContext);
-  const { toggleDropdown } = useContext(VisibleDropdownContext);
-  const [exitHover, setExitHover] = useState(false);
+  const { visible, toggleDropdown, activeHover, hoverDropdown } = useContext(
+    VisibleDropdownContext,
+  );
 
-  const hoverExit = () => {
-    setExitHover(prev => !prev);
-  };
-  console.log(exitHover);
   return (
     <>
       {visible && (
@@ -32,14 +28,14 @@ const DropDown = () => {
                 type="button"
                 onClick={toggleDropdown}
                 className={styles.closeDropdown}
-                onMouseOut={() => hoverExit()}
-                onMouseOver={() => hoverExit()}
+                onMouseOut={() => hoverDropdown()}
+                onMouseOver={() => hoverDropdown()}
               >
                 <IoMdClose />
               </button>
               <div
                 className={styles.hoverExitDropdown}
-                style={{ display: exitHover ? 'block' : 'none' }}
+                style={{ display: activeHover ? 'block' : 'none' }}
               >
                 <h6 className={styles.hoverExitDropdownText}>Вихід</h6>
               </div>
