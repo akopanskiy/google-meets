@@ -12,6 +12,9 @@
   color: #fff;
   padding: 7px;
 }
+.button:hover {
+  background-color: #464141;
+}
 .callEndButton {
   width: 50px;
   height: 35px;

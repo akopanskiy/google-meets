@@ -10,3 +10,7 @@
   color: #fff;
   padding: 5px;
 }
+.button:hover {
+  background-color: #464141;
+  border-radius: 50%;
+}
