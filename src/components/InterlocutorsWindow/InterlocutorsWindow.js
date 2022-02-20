@@ -1,8 +1,12 @@
 import { useState, useContext } from 'react';
-import styles from './InterlocutorsWindow.module.css';
+import { IconContext } from 'react-icons';
+import { VisibleDropdownContext } from '../../context/visibleDropdown';
+
 import defaultImg from '../../images/headImg.jpg';
 import fetchImages from '../../services/imgAPI';
-import { VisibleDropdownContext } from '../../context/visibleDropdown';
+
+import { BiMicrophoneOff } from 'react-icons/bi';
+import styles from './InterlocutorsWindow.module.css';
 
 const InterlocutorsWindow = () => {
   const [image, setImage] = useState('');
@@ -35,6 +39,11 @@ const InterlocutorsWindow = () => {
       >
         Someone on the other side of the screen
       </span>
+      <IconContext.Provider value={{ size: '20px', color: 'white' }}>
+        <div className={styles.activeUserImg}>
+          <BiMicrophoneOff />
+        </div>
+      </IconContext.Provider>
     </div>
   );
 };

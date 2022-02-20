@@ -13,6 +13,7 @@ const UserWindow = () => {
       style={{ right: visible ? '400px' : '20px' }}
     >
       <img src={userImg} alt="you:-)))" className={styles.userImg} />
+      <span className={styles.userWindowName}>Ви</span>
     </div>
   );
 };
