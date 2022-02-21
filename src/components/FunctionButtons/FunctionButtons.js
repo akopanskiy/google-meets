@@ -58,6 +58,11 @@ const FunctionButtons = () => {
         >
           <h6 className={styles.hoverBtnDropdownText}>Показати всіх</h6>
         </div>
+
+        <div className={styles.numberOfUsers}>
+          <h6 className={styles.numberOfUsersText}>2</h6>
+        </div>
+
         <button
           type="button"
           className={styles.button}

@@ -73,3 +73,18 @@
 .hoverBtnDropdownTextFirth {
   margin: 3px 0 0 0px;
 }
+.numberOfUsers {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  bottom: 55px;
+  right: 153px;
+  border-radius: 50%;
+  background-color: gray;
+  z-index: 10;
+}
+.numberOfUsersText {
+  margin: 1px 0 1px 5px;
+  color: #fff;
+  font-size: 12px;
+}
