@@ -13,6 +13,7 @@ const App = () => {
   const toggleDropdown = () => {
     setVisible(prev => !prev);
     setDisabled(prev => !prev);
+    setActiveHoverExit(false);
   };
 
   const hoverDropdownBtnExit = () => {

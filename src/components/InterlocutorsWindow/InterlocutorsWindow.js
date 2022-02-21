@@ -35,7 +35,7 @@ const InterlocutorsWindow = () => {
       />
       <span
         className={styles.nameInterlocutor}
-        style={{ left: visible ? '18px' : '105px' }}
+        style={{ left: visible ? '2px' : '2px' }}
       >
         Someone on the other side of the screen
       </span>

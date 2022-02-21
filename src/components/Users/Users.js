@@ -29,6 +29,10 @@ const Users = () => {
               <div className={styles.userSigns}>
                 <VscPinned />
               </div>
+
+              <div>
+                <h6>Закріпити себе на своєму головному екрані</h6>
+              </div>
             </IconContext.Provider>
           </li>
           <li className={styles.user}>

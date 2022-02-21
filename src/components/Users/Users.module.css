@@ -47,6 +47,7 @@
   padding: 0px;
 }
 .userSigns {
+  position: relative;
   width: 25px;
   height: 25px;
   margin-left: 25px;
@@ -56,6 +57,16 @@
 .userSecondSigns:hover {
   border-radius: 50%;
   background-color: #a9a9a9;
+}
+.userSignsHover {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
 }
 .userSecondIcon {
   width: 35px;
