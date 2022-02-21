@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { IconContext } from 'react-icons';
 import { CgLoadbarSound } from 'react-icons/cg';
 import { VscPinned } from 'react-icons/vsc';
@@ -7,6 +9,15 @@ import { MdOutlineMoreVert } from 'react-icons/md';
 import styles from './Users.module.css';
 
 const Users = () => {
+  const [hoverUserFirst, setHoverUserFirst] = useState(false);
+  const [hoverUserSecond, setHoverUserSecond] = useState(false);
+
+  const hoverDropdownUserFirst = () => {
+    setHoverUserFirst(prev => !prev);
+  };
+  const hoverDropdownUserSecond = () => {
+    setHoverUserSecond(prev => !prev);
+  };
   return (
     <>
       <h6 className={styles.headerUsers}>Триває виклик</h6>
@@ -26,12 +37,20 @@ const Users = () => {
               </div>
             </IconContext.Provider>
             <IconContext.Provider value={{ size: '25px', color: 'gray' }}>
-              <div className={styles.userSigns}>
+              <div
+                className={styles.userSigns}
+                onMouseOut={() => hoverDropdownUserFirst()}
+                onMouseOver={() => hoverDropdownUserFirst()}
+              >
                 <VscPinned />
               </div>
-
-              <div>
-                <h6>Закріпити себе на своєму головному екрані</h6>
+              <div
+                className={styles.userSignsHoverFirst}
+                style={{ display: hoverUserFirst ? 'block' : 'none' }}
+              >
+                <h6 className={styles.userSignsHoverTextFirst}>
+                  Закріпити себе на своєму головному екрані
+                </h6>
               </div>
             </IconContext.Provider>
           </li>
@@ -52,8 +71,18 @@ const Users = () => {
               </div>
             </IconContext.Provider>
             <IconContext.Provider value={{ size: '25px', color: 'gray' }}>
-              <div className={styles.userSecondSigns}>
+              <div
+                className={styles.userSecondSigns}
+                onMouseOut={() => hoverDropdownUserSecond()}
+                onMouseOver={() => hoverDropdownUserSecond()}
+              >
                 <MdOutlineMoreVert />
+              </div>
+              <div
+                className={styles.userSignsHoverSecond}
+                style={{ display: hoverUserSecond ? 'block' : 'none' }}
+              >
+                <h6 className={styles.userSignsHoverTextSecond}>Інші дії</h6>
               </div>
             </IconContext.Provider>
           </li>

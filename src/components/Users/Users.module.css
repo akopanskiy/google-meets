@@ -58,15 +58,31 @@
   border-radius: 50%;
   background-color: #a9a9a9;
 }
-.userSignsHover {
+.userSignsHoverFirst {
   position: absolute;
-  width: 400px;
-  height: 40px;
-  top: 0;
-  right: 0;
+  width: 160px;
+  height: 32px;
+  top: 310px;
+  right: 30px;
   background-color: #464141;
   border-radius: 3px;
   color: #fff;
+}
+.userSignsHoverSecond {
+  position: absolute;
+  width: 55px;
+  height: 20px;
+  top: 360px;
+  right: 20px;
+  background-color: #464141;
+  border-radius: 3px;
+  color: #fff;
+}
+.userSignsHoverTextFirst {
+  margin: 3px 7px 3px 5px;
+}
+.userSignsHoverTextSecond {
+  margin: 3px 3px 3px 7px;
 }
 .userSecondIcon {
   width: 35px;
