@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/google-meets/static/css/main.632a1084.css",
+    "main.js": "/google-meets/static/js/main.6e5a6d27.js",
+    "static/media/headImg.jpg": "/google-meets/static/media/headImg.e4ab378bd9821b97f791.jpg",
+    "index.html": "/google-meets/index.html",
+    "main.632a1084.css.map": "/google-meets/static/css/main.632a1084.css.map",
+    "main.6e5a6d27.js.map": "/google-meets/static/js/main.6e5a6d27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.632a1084.css",
+    "static/js/main.6e5a6d27.js"
+  ]
+}
